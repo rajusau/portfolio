@@ -1,0 +1,187 @@
+/* Header styles */
+.header {
+  background: #333; /* Dark background for contrast */
+  color: #fff; /* White text for readability */
+  padding: 2em;
+  text-align: center;
+  border-bottom: 2px solid #444; /* Slightly lighter border */
+}
+
+.header h1 {
+  font-family: 'Roboto', sans-serif; /* Modern font */
+  font-size: 2.5em; /* Adjusted for better fit */
+  margin-bottom: 0.5em;
+}
+
+.header-intro {
+  font-family: 'Lora', serif; /* Elegant serif font */
+  font-size: 1.2em;
+}
+
+/* Main content styles */
+main {
+  padding: 2em;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* About section */
+.about-section {
+  background: #f9f9f9; /* Light grey background */
+  padding: 2em;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.about-section p {
+  font-size: 1.1em;
+  color: #666;
+}
+
+.btn-primary {
+  display: inline-block;
+  padding: 0.75em 1.5em;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #444;
+}
+
+/* Insights container */
+.insights-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2em;
+  margin-bottom: 2em;
+}
+
+/* Insight styles */
+.insight {
+  background: #fff;
+  border-radius: 8px;
+  padding: 1em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.insight-header {
+  margin-bottom: 1em;
+}
+
+.insight h3 {
+  font-size: 1.5em;
+}
+
+.insight-subtitle {
+  font-size: 1em;
+  color: #777;
+}
+
+.insight-description {
+  font-size: 1em;
+  color: #666;
+  margin-bottom: 1em;
+}
+
+.insight-img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+/* Contact section */
+.contact-section {
+  background: #f4f4f4; /* Light grey background */
+  padding: 2em;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 600px;
+  margin: auto;
+}
+
+.contact-section p {
+  font-size: 1.1em;
+  color: #666;
+}
+
+/* Form styles */
+form {
+  display: grid;
+  gap: 1em;
+}
+
+form input, form textarea {
+  padding: 0.75em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em;
+  width: 100%;
+}
+
+form button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 0.75em;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 1.1em;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #444;
+}
+
+/* Footer styles */
+.footer {
+  background-color: #333; /* Dark background for contrast */
+  color: #fff;
+  padding: 1em;
+  text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .header h1 {
+      font-size: 2em;
+  }
+
+  .header-intro {
+      font-size: 1.1em;
+  }
+
+  .insight h3 {
+      font-size: 1.2em;
+  }
+
+  .insight-description {
+      font-size: 0.9em;
+  }
+}
+
+@media (max-width: 480px) {
+  .header h1 {
+      font-size: 1.8em;
+  }
+
+  .header-intro {
+      font-size: 1em;
+  }
+
+  .insight h3 {
+      font-size: 1em;
+  }
+
+  .insight-description {
+      font-size: 0.8em;
+  }
+}
