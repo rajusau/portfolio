@@ -1,0 +1,198 @@
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Lora:wght@400&family=Montserrat:wght@500&display=swap');
+
+/* Header styles */
+.header {
+  background: linear-gradient(135deg, #333, #444); /* Gradient background */
+  color: #fff;
+  padding: 2em 2em; /* Adjusted padding */
+  text-align: center;
+  border-bottom: 4px solid #555; /* Thicker, lighter border */
+  position: relative;
+  overflow: hidden;
+}
+
+/* Header overlay */
+.header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, rgba(0,0,0,0.3) 100%);
+  z-index: 0;
+  transform: translateX(-50%);
+}
+
+.header h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5em; /* Adjusted font size */
+  margin-bottom: 0.5em;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  position: relative;
+}
+
+.header-intro {
+  font-family: 'Lora', serif;
+  font-size: 1.2em; /* Adjusted font size */
+  z-index: 1;
+  position: relative;
+}
+
+/* Main content styles */
+main {
+  padding: 3em;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* About section */
+.about-section {
+  background: #fff;
+  padding: 3em;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-bottom: 3em;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.about-section p {
+  font-size: 1.2em;
+  color: #555;
+}
+
+/* Buttons */
+.btn-primary {
+  display: inline-block;
+  padding: 0.75em 1.5em;
+  background: linear-gradient(135deg, #000, #333);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 1em;
+  font-family: 'Montserrat', sans-serif;
+  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #444, #666);
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Insights container */
+.insights-container {
+  display: flex;
+  flex-wrap: wrap; /* Allows items to wrap to the next line if needed */
+  gap: 2em; /* Gap between items */
+  margin-bottom: 3em;
+  justify-content: center; /* Center items horizontally */
+}
+
+/* Insight styles */
+.insight {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.5em;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 800px; /* Adjusted width */
+  height: 600px; /* Adjusted height */
+}
+
+.insight:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.insight::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.05);
+  border-radius: 12px;
+  z-index: 0;
+}
+
+.insight-header {
+  margin-bottom: 1.5em;
+  z-index: 1;
+  position: relative;
+}
+
+.insight h3 {
+  font-size: 1.6em;
+  font-family: 'Montserrat', sans-serif;
+  color: #333;
+  margin-bottom: 0.5em;
+}
+
+.insight-subtitle {
+  font-size: 1.1em;
+  color: #888;
+}
+
+.insight-description {
+  font-size: 1.1em;
+  color: #666;
+  margin-bottom: 1.5em;
+}
+
+.insight-img {
+  width: 100%; /* Ensures images fill the container width */
+  height: 60%; /* Adjusts height to fit within the 600px height */
+  object-fit: cover; /* Ensures the image covers the container without distortion */
+  border-radius: 8px; /* Rounded corners */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 2.5em;
+  }
+
+  .header-intro {
+    font-size: 1.2em;
+  }
+
+  .insight h3 {
+    font-size: 1.4em;
+  }
+
+  .insight-description {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  .header h1 {
+    font-size: 2em;
+  }
+
+  .header-intro {
+    font-size: 1.1em;
+  }
+
+  .insight h3 {
+    font-size: 1.2em;
+  }
+
+  .insight-description {
+    font-size: 0.9em;
+  }
+}
