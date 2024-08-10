@@ -1,19 +1,29 @@
-/* Import fonts */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Lora:wght@400&family=Montserrat:wght@500&display=swap');
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-/* Header styles */
-.header {
-  background: linear-gradient(135deg, #333, #444); /* Gradient background */
+/* Body and main styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  background: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background: linear-gradient(135deg, #333, #444);
   color: #fff;
-  padding: 2em 2em; /* Adjusted padding */
+  padding: 2em;
   text-align: center;
-  border-bottom: 4px solid #555; /* Thicker, lighter border */
+  border-bottom: 4px solid #555;
   position: relative;
   overflow: hidden;
 }
 
-/* Header overlay */
-.header::before {
+header::before {
   content: '';
   position: absolute;
   top: 0;
@@ -25,9 +35,9 @@
   transform: translateX(-50%);
 }
 
-.header h1 {
+header h1 {
   font-family: 'Montserrat', sans-serif;
-  font-size: 2.5em; /* Adjusted font size */
+  font-size: 2.5em;
   margin-bottom: 0.5em;
   text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
   z-index: 1;
@@ -36,19 +46,17 @@
 
 .header-intro {
   font-family: 'Lora', serif;
-  font-size: 1.2em; /* Adjusted font size */
+  font-size: 1.2em;
   z-index: 1;
   position: relative;
 }
 
-/* Main content styles */
 main {
   padding: 3em;
   max-width: 1200px;
   margin: auto;
 }
 
-/* About section */
 .about-section {
   background: #fff;
   padding: 3em;
@@ -69,7 +77,6 @@ main {
   color: #555;
 }
 
-/* Buttons */
 .btn-primary {
   display: inline-block;
   padding: 0.75em 1.5em;
@@ -89,16 +96,14 @@ main {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
-/* Insights container */
 .insights-container {
   display: flex;
-  flex-wrap: wrap; /* Allows items to wrap to the next line if needed */
-  gap: 2em; /* Gap between items */
+  flex-wrap: wrap;
+  gap: 2em;
   margin-bottom: 3em;
-  justify-content: center; /* Center items horizontally */
+  justify-content: center;
 }
 
-/* Insight styles */
 .insight {
   background: #fff;
   border-radius: 12px;
@@ -107,85 +112,58 @@ main {
   text-align: center;
   position: relative;
   overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  width: 800px; /* Fixed width */
-  height: 550px; /* Fixed height */
-}
-
-.insight:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
-}
-
-.insight::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.05);
-  border-radius: 12px;
-  z-index: 0;
+  max-width: calc(800px + 20px); /* Adjust width based on image width plus padding */
+  width: calc(100% - 20px); /* Responsive adjustment */
+  box-sizing: border-box; /* Ensure padding and border are included in the width */
 }
 
 .insight-header {
-  margin-bottom: 1em; /* Margin below title */
-  z-index: 1;
-  position: relative;
+  margin-bottom: 1.5em;
 }
 
 .insight h3 {
-  font-size: 1.6em; /* Title size */
+  font-size: 1.6em;
   font-family: 'Montserrat', sans-serif;
   color: #333;
   margin-bottom: 0.5em;
 }
 
 .insight-subtitle {
-  font-size: 1.2em; /* Subtitle size */
+  font-size: 1.1em;
   color: #888;
-  margin-bottom: 1em; /* Margin to separate from description */
 }
 
 .insight-description {
-  font-size: 1em; /* Description size */
+  font-size: 1.1em;
   color: #666;
   margin-bottom: 1.5em;
 }
 
-.insight-img {
-  width: 100%; /* Full width of container */
-  height: auto; /* Maintain aspect ratio */
-  max-height: 430px; /* Maximum height for image */
-  object-fit: cover; /* Ensure image covers container */
-  border-radius: 8px; /* Rounded corners */
+.insight-img-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1em;
+  height: auto;
+  max-height: 500px;
+  overflow: hidden;
 }
 
-/* Responsive Styles */
+.insight-img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+/* Responsive styles */
 @media (max-width: 768px) {
-  .header h1 {
-    font-size: 2.5em;
+  .insights-container {
+    flex-direction: column;
   }
-
-  .header-intro {
-    font-size: 1.2em;
-  }
-
-  .insight h3 {
-    font-size: 1.4em; /* Adjusted font size for smaller screens */
-  }
-
-  .insight-subtitle {
-    font-size: 1em; /* Adjusted font size for smaller screens */
-  }
-
-  .insight-description {
-    font-size: 0.9em;
-  }
-
-  .insight-img {
-    max-height: 300px; /* Adjusted height for smaller screens */
+  
+  .insight {
+    max-width: calc(100% - 20px);
   }
 }
 
@@ -193,24 +171,12 @@ main {
   .header h1 {
     font-size: 2em;
   }
-
+  
   .header-intro {
-    font-size: 1.1em;
+    font-size: 1em;
   }
 
-  .insight h3 {
-    font-size: 1.2em; /* Adjusted font size for smaller screens */
-  }
-
-  .insight-subtitle {
-    font-size: 0.9em; /* Adjusted font size for smaller screens */
-  }
-
-  .insight-description {
-    font-size: 0.8em;
-  }
-
-  .insight-img {
-    max-height: 250px; /* Adjusted height for smaller screens */
+  .about-section p {
+    font-size: 1em;
   }
 }
