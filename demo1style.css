@@ -108,8 +108,8 @@ main {
   position: relative;
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  width: 800px; /* Adjusted width */
-  height: 600px; /* Adjusted height */
+  width: 800px; /* Fixed width */
+  height: 550px; /* Fixed height */
 }
 
 .insight:hover {
@@ -130,33 +130,35 @@ main {
 }
 
 .insight-header {
-  margin-bottom: 1.5em;
+  margin-bottom: 1em; /* Margin below title */
   z-index: 1;
   position: relative;
 }
 
 .insight h3 {
-  font-size: 1.6em;
+  font-size: 1.6em; /* Title size */
   font-family: 'Montserrat', sans-serif;
   color: #333;
   margin-bottom: 0.5em;
 }
 
 .insight-subtitle {
-  font-size: 1.1em;
+  font-size: 1.2em; /* Subtitle size */
   color: #888;
+  margin-bottom: 1em; /* Margin to separate from description */
 }
 
 .insight-description {
-  font-size: 1.1em;
+  font-size: 1em; /* Description size */
   color: #666;
   margin-bottom: 1.5em;
 }
 
 .insight-img {
-  width: 100%; /* Ensures images fill the container width */
-  height: 60%; /* Adjusts height to fit within the 600px height */
-  object-fit: cover; /* Ensures the image covers the container without distortion */
+  width: 100%; /* Full width of container */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 430px; /* Maximum height for image */
+  object-fit: cover; /* Ensure image covers container */
   border-radius: 8px; /* Rounded corners */
 }
 
@@ -171,11 +173,19 @@ main {
   }
 
   .insight h3 {
-    font-size: 1.4em;
+    font-size: 1.4em; /* Adjusted font size for smaller screens */
+  }
+
+  .insight-subtitle {
+    font-size: 1em; /* Adjusted font size for smaller screens */
   }
 
   .insight-description {
-    font-size: 1em;
+    font-size: 0.9em;
+  }
+
+  .insight-img {
+    max-height: 300px; /* Adjusted height for smaller screens */
   }
 }
 
@@ -189,10 +199,18 @@ main {
   }
 
   .insight h3 {
-    font-size: 1.2em;
+    font-size: 1.2em; /* Adjusted font size for smaller screens */
+  }
+
+  .insight-subtitle {
+    font-size: 0.9em; /* Adjusted font size for smaller screens */
   }
 
   .insight-description {
-    font-size: 0.9em;
+    font-size: 0.8em;
+  }
+
+  .insight-img {
+    max-height: 250px; /* Adjusted height for smaller screens */
   }
 }
