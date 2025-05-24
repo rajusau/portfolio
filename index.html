@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Raju Sau Portfolio</title>
+    <title>Raju Sau | Data Analyst</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
@@ -57,15 +57,15 @@
         </div>
         <div id="socials-container">
           <img
-            src=" linkedin.png"
+            src="linkedin.png"
             alt="My LinkedIn profile"
-            class="icon"
+            class="icon shake"
             onclick="location.href='https://www.linkedin.com/in/rajusau'"
           />
           <img
             src="github.png"
             alt="My Github profile"
-            class="icon"
+            class="icon swing"
             onclick="location.href='https://github.com/rajusau/'"
           />
         </div>
@@ -81,12 +81,12 @@
         <div class="about-details-container">
           <div class="about-containers">
             <div class="details-container">
-              <img src="experience.png" alt="experience icon" class="icon" />
+              <img src="experience.png" alt="experience icon" class="icon shake" />
               <h3>Experience</h3>
               <p>2+ years <br />Working On Data Analysis</p>
             </div>
             <div class="details-container">
-              <img src=" education.png" alt="Education icon" class="icon" />
+              <img src=" education.png" alt="Education icon" class="icon flip" />
               <h3>Education</h3>
               <p>B. Tech in<br />Computer Science and Engineering</p>
             </div>
@@ -104,7 +104,7 @@
         </div>
       </div>
       <img
-        src=" arrow.png"
+        src="arrow.png"
         alt="Arrow icon"
         class="icon arrow"
         onclick="location.href='./#projects'"
@@ -114,9 +114,20 @@
       <p class="section__text__p1">Browse My Recent</p>
       <h1 class="title">Projects</h1>
       <div class="projects-grid">
-        <div class="project-item">
+        <!-- Project 1 -->
+        <div
+          class="project-item"
+          onclick="location.href='project1-demo.html'"
+          role="link"
+          tabindex="0"
+          onkeyup="if(event.key==='Enter') location.href='project1-demo.html'"
+        >
           <div class="article-container">
-            <img src="US road accident analysis.jpeg" alt="Project 1" class="project-img" />
+            <img
+              src="US road accident analysis.jpeg"
+              alt="Project 1"
+              class="project-img"
+            />
           </div>
           <h2 class="project-title">
             US Road Accident Exploratory Data Analysis
@@ -124,21 +135,27 @@
           <div class="btn-container">
             <button
               class="btn project-btn"
-              onclick="location.href='https://github.com/rajusau/US-Accident-Exploratory-Data-Analysis'"
+              onclick="event.stopPropagation(); location.href='https://github.com/rajusau/US-Accident-Exploratory-Data-Analysis'"
             >
-              Github
-            </button>
-            <button
-              class="btn project-btn"
-              onclick="location.href='project1-demo.html'"
-            >
-              Live Demo
+              GitHub
             </button>
           </div>
         </div>
-        <div class="project-item">
+
+        <!-- Project 2 -->
+        <div
+          class="project-item"
+          onclick="location.href='project2-demo.html'"
+          role="link"
+          tabindex="0"
+          onkeyup="if(event.key==='Enter') location.href='project2-demo.html'"
+        >
           <div class="article-container">
-            <img src="HR dashboard thumbnail.jpg" alt="Project 2" class="project-img" />
+            <img
+              src="HR dashboard thumbnail.jpg"
+              alt="Project 2"
+              class="project-img"
+            />
           </div>
           <h2 class="project-title">
             Human Resource Dashboard
@@ -146,21 +163,27 @@
           <div class="btn-container">
             <button
               class="btn project-btn"
-              onclick="location.href='https://github.com/rajusau/HR-Dashboard'"
+              onclick="event.stopPropagation(); location.href='https://github.com/rajusau/HR-Dashboard'"
             >
-              Github
-            </button>
-            <button
-              class="btn project-btn"
-              onclick="location.href='project2-demo.html'"
-            >
-              Live Demo
+              GitHub
             </button>
           </div>
         </div>
-        <div class="project-item">
+
+        <!-- Project 3 -->
+        <div
+          class="project-item"
+          onclick="location.href='project3-demo.html'"
+          role="link"
+          tabindex="0"
+          onkeyup="if(event.key==='Enter') location.href='project3-demo.html'"
+        >
           <div class="article-container">
-            <img src="pizza sales.jpg" alt="Project 3" class="project-img" />
+            <img
+              src="pizza sales.jpg"
+              alt="Project 3"
+              class="project-img"
+            />
           </div>
           <h2 class="project-title">
             Pizza Sales Analysis
@@ -168,21 +191,27 @@
           <div class="btn-container">
             <button
               class="btn project-btn"
-              onclick="location.href='https://github.com/rajusau/pizza-sales-analysis'"
+              onclick="event.stopPropagation(); location.href='https://github.com/rajusau/pizza-sales-analysis'"
             >
-              Github
-            </button>
-            <button
-              class="btn project-btn"
-              onclick="location.href='project3-demo.html'"
-            >
-              Live Demo
+              GitHub
             </button>
           </div>
         </div>
-        <div class="project-item">
+
+        <!-- Project 4 -->
+        <div
+          class="project-item"
+          onclick="location.href='project4-demo.html'"
+          role="link"
+          tabindex="0"
+          onkeyup="if(event.key==='Enter') location.href='project4-demo.html'"
+        >
           <div class="article-container">
-            <img src="Axis-Bank-Share-Price-Today.jpeg" alt="Project 4" class="project-img" />
+            <img
+              src="Axis-Bank-Share-Price-Today.jpeg"
+              alt="Project 4"
+              class="project-img"
+            />
           </div>
           <h2 class="project-title">
             Axis Bank Stock Analysis
@@ -190,21 +219,27 @@
           <div class="btn-container">
             <button
               class="btn project-btn"
-              onclick="location.href='https://github.com/rajusau/Axis-Bank-Stock-Analysis/'"
+              onclick="event.stopPropagation(); location.href='https://github.com/rajusau/Axis-Bank-Stock-Analysis/'"
             >
-              Github
-            </button>
-            <button
-              class="btn project-btn"
-              onclick="location.href='project4_demo.html'"
-            >
-              Live Demo
+              GitHub
             </button>
           </div>
         </div>
-        <div class="project-item">
+
+        <!-- Project 5 -->
+        <div
+          class="project-item"
+          onclick="location.href='project5-demo.html'"
+          role="link"
+          tabindex="0"
+          onkeyup="if(event.key==='Enter') location.href='project5-demo.html'"
+        >
           <div class="article-container">
-            <img src="financial Transaction Analysis.jpg" alt="Project 5" class="project-img" />
+            <img
+              src="financial Transaction Analysis.jpg"
+              alt="Project 5"
+              class="project-img"
+            />
           </div>
           <h2 class="project-title">
             Financial Transaction Analysis
@@ -212,22 +247,17 @@
           <div class="btn-container">
             <button
               class="btn project-btn"
-              onclick="location.href='https://github.com/rajusau/Financial-Transaction-Analysis.git'"
+              onclick="event.stopPropagation(); location.href='https://github.com/rajusau/Financial-Transaction-Analysis.git'"
             >
-              Github
-            </button>
-            <button
-              class="btn project-btn"
-              onclick="location.href='project5_demo.html'"
-            >
-              Live Demo
+              GitHub
             </button>
           </div>
         </div>
-   
-        <!-- Repeat the above block for each project -->
+
+        <!-- Add more projects here… -->
 
       </div>
+
       <img
         src="arrow.png"
         alt="Arrow icon"
@@ -244,35 +274,35 @@
             <h2 class="skill-sub-title">Technical Skills</h2>
             <div class="article-container">
               <article>
-                <img src="checkmark.png" alt="Skills icon" class="icon" />
+                <img src="checkmark.png" alt="Skills icon" class="icon pop" />
                 <div>
                   <h3>Python</h3>
                   <p>Experienced</p>
                 </div>
               </article>
               <article>
-                <img src="checkmark.png" alt="Skills icon" class="icon" />
+                <img src="checkmark.png" alt="Skills icon" class="icon pop" />
                 <div>
                   <h3>Power Bi</h3>
                   <p>Advanced</p>
                 </div>
               </article>
               <article>
-                <img src="checkmark.png" alt="Skills icon" class="icon" />
+                <img src="checkmark.png" alt="Skills icon" class="icon pop" />
                 <div>
                   <h3>SQL</h3>
                   <p>Experienced</p>
                 </div>
               </article>
               <article>
-                <img src="checkmark.png" alt="Skills icon" class="icon" />
+                <img src="checkmark.png" alt="Skills icon" class="icon pop" />
                 <div>
                   <h3>Tableau</h3>
                   <p>Experienced</p>
                 </div>
               </article>
               <article>
-                <img src="checkmark.png" alt="Skills icon" class="icon" />
+                <img src="checkmark.png" alt="Skills icon" class="icon pop" />
                 <div>
                   <h3>Excel</h3>
                   <p>Experienced</p>
@@ -284,28 +314,28 @@
             <h2 class="skill-sub-title">Analytical Skills</h2>
             <div class="article-container">
               <article>
-                <img src=" checkmark.png" alt="Skills icon" class="icon" />
+                <img src=" checkmark.png" alt="Skills icon" class="icon shake" />
                 <div>
                   <h3>Data Analysis</h3>
                   <p>Experienced</p>
                 </div>
               </article>
               <article>
-                <img src=" checkmark.png" alt="Skills icon" class="icon" />
+                <img src=" checkmark.png" alt="Skills icon" class="icon shake" />
                 <div>
                   <h3>Visualization</h3>
                   <p>Intermediate</p>
                 </div>
               </article>
               <article>
-                <img src=" checkmark.png" alt="Skills icon" class="icon" />
+                <img src=" checkmark.png" alt="Skills icon" class="icon shake" />
                 <div>
                   <h3>Statistics</h3>
                   <p>Intermediate</p>
                 </div>
               </article>
               <article>
-                <img src=" checkmark.png" alt="Skills icon" class="icon" />
+                <img src=" checkmark.png" alt="Skills icon" class="icon shake" />
                 <div>
                   <h3>Story Telling</h3>
                   <p>Intermediate</p>
@@ -330,7 +360,7 @@
           <img
             src="email.png"
             alt="Email icon"
-            class="icon contact-icon email-icon"
+            class="icon swing contact-icon email-icon"
           />
           <p>
             <a href="mailto:theraju2003@gmail.com">theraju2003@gmail.com</a>
@@ -340,7 +370,7 @@
           <img
             src="linkedin.png"
             alt="LinkedIn icon"
-            class="icon contact-icon"
+            class="icon swing contact-icon"
           />
           <p><a href="https://www.linkedin.com/in/rajusau">LinkedIn</a></p>
         </div>
