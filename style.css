@@ -568,6 +568,14 @@ footer p {
   animation: shake 0.5s ease-in-out; /* half-second shake */
 }
 
+/* Floating arrow animation */
+.arrow {
+  /* adjust duration (3s), easing, and distance (10px) to taste */
+  animation: float 1s ease-in-out infinite;
+}
 
-
-
+@keyframes float {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
